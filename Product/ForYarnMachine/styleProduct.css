@@ -74,6 +74,7 @@ body {
 }
 .hover-product:hover .product-types {
   display: block;
+  box-shadow: unset;
 }
 .product-types:focus,
 .product-types:hover {
