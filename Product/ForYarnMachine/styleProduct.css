@@ -87,6 +87,10 @@ body {
 }
 .types-Sp {
   box-shadow: 2px 4px 12px olivedrab;
+  margin-top: -2rem;
+}
+.product-types--New .types-Sp {
+  margin-top: 0.5rem;
 }
 .types-Sp .types-item {
   color: #fff;
