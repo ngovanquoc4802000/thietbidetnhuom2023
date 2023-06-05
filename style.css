@@ -43,18 +43,17 @@ body {
   display: flex;
   list-style: none;
   font-size: 1.5rem;
-  margin-left: 45rem;
+  margin-left: 43rem;
   margin-top: 1.2rem;
 }
 .item-product {
   margin-left: 0.8rem;
 }
 .header-link {
-  margin-left: 1rem;
   color: var(--color--product);
   box-shadow: inset 0 0 0 0 #54b3d6;
-  margin: 1 -0.75rem;
   padding: 0 0.25rem;
+  margin-left: 0.6rem;
   transition: all 0.5s ease-out;
 }
 /* Product types */
@@ -78,8 +77,6 @@ body {
 .product-types:focus,
 .product-types:hover {
   width: 25rem;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 .active {
   height: 32.9rem;
@@ -87,6 +84,10 @@ body {
 }
 .types-Sp {
   box-shadow: 2px 4px 12px olivedrab;
+  margin-top: -2rem;
+}
+.product-types--New .types-Sp {
+   margin-top: 0.5  rem;
 }
 .types-Sp .types-item {
   color: #fff;
@@ -94,6 +95,56 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+/* Hover forYarn */
+.forYarn {
+  position: absolute;
+  margin-left: 25rem;
+  margin-top: -0.5rem;
+  border-radius: 1rem;
+  background-color: #266303;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+  display: none;
+}
+.forYarn::before {
+  content: "";
+  position: fixed;
+  width: 1.8rem;
+  height: 26rem;
+  top: -2rem;
+  left: -1rem;
+  background-color: transparent;
+}
+.types-item:hover .forYarn {
+  transform: translateX(0%);
+  display: block;
+}
+.forYarn ul {
+  width: 19rem;
+  height: 17rem;
+  margin-top: -5rem;
+}
+.forYarn li {
+  padding: 0.1rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  list-style: none;
+  padding-left: 0.2rem;
+  transition: all 0.3s linear;
+}
+.forYarn li:hover {
+  background-color: #54b3d6;
+  color: #fff;
+}
+.forYarn .forYarn-link-fix {
+  margin-left: -1rem;
+  color: var(--color--product);
+  text-decoration: none;
+}
+.forYarn .forYarn-link {
+  text-decoration: none;
+  color: var(--color--product);
 }
 .types-item:hover {
   background-color: #54b3d6;
@@ -139,7 +190,7 @@ body {
   height: 9rem;
   margin-top: 2rem;
   object-fit: cover;
-  margin-left: 5.5rem;
+  margin-left: 9.5rem;
   padding: 0.5rem;
 }
 .list-header .img-QR:hover {
@@ -425,7 +476,7 @@ body {
 }
 .between-item a:hover {
   text-decoration: none;
-  color: blue
+  color: blue;
 }
 
 /* footer */
@@ -454,7 +505,7 @@ body {
   color: var(--color--product);
 }
 .footer-artice > a:hover {
-  color:#54b3d6;
+  color: #54b3d6;
   text-decoration: none;
 }
 .footer-list {
@@ -466,18 +517,20 @@ body {
   text-decoration: none;
 }
 .ft-blue {
- color:rgb(21,163,250);
+  color: rgb(21, 163, 250);
 }
-.ft-blue:hover, .ft-red:hover, .ft-white:hover {
+.ft-blue:hover,
+.ft-red:hover,
+.ft-white:hover {
   background-color: aqua;
   border-radius: 1rem;
 }
-.ft-red{
- color: red;
+.ft-red {
+  color: red;
 }
 
-.ft-white{
- color: rgb(29,161,242);
+.ft-white {
+  color: rgb(29, 161, 242);
 }
 
 .Coppy {
