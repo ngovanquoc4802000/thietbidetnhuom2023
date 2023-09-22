@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #343f4f;
+}
+.wrapper {
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.carousel img {
+  margin-left: 14px;
+  height: 340px;
+  object-fit: cover;
+  width: calc(100% / 3);
+}
+.carousel img:first-child {
+  margin-left: 0px;
+}
+.wrapper span {
+  background-color: aliceblue;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 46px;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  top: 50%;
+  z-index: 3;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.wrapper span:first-child {
+  left: -23px;
+}
+.wrapper span:last-child {
+  right: -23px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+  
+}

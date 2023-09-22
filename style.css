@@ -87,7 +87,7 @@ body {
   margin-top: -2rem;
 }
 .product-types--New .types-Sp {
-   margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 .types-Sp .types-item {
   color: #fff;
@@ -95,6 +95,10 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+.types-item .fff {
+  color: #fff;
 }
 /* Hover forYarn */
 .forYarn {
@@ -124,6 +128,22 @@ body {
   width: 19rem;
   height: 17rem;
   margin-top: -5rem;
+  
+}
+.forYarn .forYarn-loom {
+  cursor: pointer;
+  width: 19rem;
+  height: 18rem;
+  margin-top: 0rem;
+  margin-left: 0.2rem;
+}
+.forYarn .height {
+  height: 25rem!important;
+}
+.forYarn .forYarn-loom .forYarn-link-bug {
+  margin-left: 0.2rem;
+  color: #fff;
+  text-decoration: none;
 }
 .forYarn li {
   padding: 0.1rem;
